@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Group 1's Project 3</h1>
+    <h2>2024 Northwestern Data Bootcamp</h2>
+    <p>Explore our interactive visualizations:</p>
+    <p>Our visualizations capture the damages (by severity), magnitude (scale of 0 - 5), and frequency (by day/month/year) for tornadoes in 2023 in the United States</p>
+    <a href="{{ url_for('heat') }}">Heatmap (Damages x Location)</a>
+    <a href="{{ url_for('bubble') }}">Bubble Map (Magnitude x Location)</a>
+    <a href="{{ url_for('tornado_counts') }}">Tornado Counts</a>
+</body>
+</html>

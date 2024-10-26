@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornado Damage Heatmap</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="anonymous">
+    
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="anonymous"></script>
+    
+    <!-- Leaflet Heatmap Plugin -->
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    
+    <!-- Turf.js - Using a CDN here without integrity and crossorigin for simplicity -->
+    <script src="https://unpkg.com/@turf/turf"></script>
+</head>
+<body>
+    <h1>Tornado Damage Heatmap</h1>
+    <label for="month-select">Select Month:</label>
+    <select id="month-select">
+        <option value="all">All Months</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+    <div id="heatmap" style="height: 600px;"></div>
+    
+    <!-- Our JavaScript -->
+    <script src="{{ url_for('static', filename='js/heatmap.js') }}"></script>
+</body>
+</html>

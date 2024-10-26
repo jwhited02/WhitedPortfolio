@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>USA Tornadoes and Magnitude: 2023</title>
+
+  <!-- D3 and Leaflet libraries -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bubble.css') }}">
+</head>
+<body>
+
+  <!-- The div that holds our map -->
+  <div id="map-id"></div>
+
+  <!-- Custom JavaScript -->
+  <script src="{{ url_for('static', filename='js/bubblemap.js') }}"></script>
+</body>
+</html>
