@@ -8,7 +8,7 @@ My main responsibility for the Car Price Analysis was the actual analysis in the
 
 ## Crowdfunding_ETL Analysis
 
-
+I completed cells 68-80 in the Jupyter Notebook for this group project.
 
 ## Movie Analysis
 
